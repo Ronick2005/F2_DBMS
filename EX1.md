@@ -22,37 +22,46 @@ RENAME: This is used to rename an object existing in the database.
 ### 1) Create a table student with the following fieds rollno,name,age,address,phoneno.
 
 ### SQL QUERY: 
-
-
+```
+create table student(rollno int(4), name varchar(50), age int(2), address varchar(10), phoneno int(10));
+```
 ### OUTPUT:
+![image](https://github.com/Ronick2005/F2_DBMS/assets/83219341/7e9351ab-b1f8-48eb-b31b-1dcf696615b7)
 
 ### 2) Change the above student table by adding another attribute department
 
 ### SQL QUERY: 
-
+```
+alter table student add column department varchar(4);
+```
 ### OUTPUT:
+![image](https://github.com/Ronick2005/F2_DBMS/assets/83219341/49914bce-5ecc-4033-979a-ef3b984f5331)
 
 
 ### 3) Drop the student table
  
 ### SQL QUERY: 
+```
 
-
+```
 ### OUTPUT:
 
 
 ### 4) Delete the student table using truncate keyword
 
 ### SQL QUERY: 
-
-
+```
+truncate table student;
+```
 ### OUTPUT:
+![image](https://github.com/Ronick2005/F2_DBMS/assets/83219341/cc616c76-f512-40eb-a11b-bf9af8c2d4b6)
 
 
 
 ### 5) Rename the student table to mystudent
 
 ### SQL QUERY: 
+```
 
-
+```
 ### OUTPUT:
