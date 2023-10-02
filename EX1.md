@@ -23,29 +23,29 @@ RENAME: This is used to rename an object existing in the database.
 
 ### SQL QUERY: 
 ```
-create table student(rollno int(4), name varchar(50), age int(2), address varchar(10), phoneno int(10));
+create table student(rollno char(5), name varchar(20), age char(5), address varchar(100), phoneno char(15));
 ```
 ### OUTPUT:
-![image](https://github.com/Ronick2005/F2_DBMS/assets/83219341/7e9351ab-b1f8-48eb-b31b-1dcf696615b7)
+![1](https://github.com/Ronick2005/F2_DBMS/assets/83219341/6ba921dc-a3e5-4bcf-8e35-d6fc0831922b)
 
 ### 2) Change the above student table by adding another attribute department
 
 ### SQL QUERY: 
 ```
-alter table student add column department varchar(4);
+ALTER TABLE student
+ADD department varchar(30);
 ```
 ### OUTPUT:
-![image](https://github.com/Ronick2005/F2_DBMS/assets/83219341/49914bce-5ecc-4033-979a-ef3b984f5331)
-
+![2](https://github.com/Ronick2005/F2_DBMS/assets/83219341/e62e635f-3c55-4a18-babb-a7bb6e78dcf2)
 
 ### 3) Drop the student table
  
 ### SQL QUERY: 
 ```
-
+drop table student;
 ```
 ### OUTPUT:
-
+![3](https://github.com/Ronick2005/F2_DBMS/assets/83219341/01dbd2bd-e9ab-4d9a-8be9-b8157330924b)
 
 ### 4) Delete the student table using truncate keyword
 
@@ -54,14 +54,17 @@ alter table student add column department varchar(4);
 truncate table student;
 ```
 ### OUTPUT:
-![image](https://github.com/Ronick2005/F2_DBMS/assets/83219341/cc616c76-f512-40eb-a11b-bf9af8c2d4b6)
-
-
+![4](https://github.com/Ronick2005/F2_DBMS/assets/83219341/a4b3b48a-f720-4eed-a776-2b47f024ca91)
 
 ### 5) Rename the student table to mystudent
 
 ### SQL QUERY: 
 ```
-
+alter table student
+rename to mystudent;
 ```
 ### OUTPUT:
+![5](https://github.com/Ronick2005/F2_DBMS/assets/83219341/e2f4e148-4f54-401b-89c7-4c192eb48a49)
+
+### RESULT:
+Hence successfully created a student database and execute DDL queries using SQL.
